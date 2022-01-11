@@ -1,0 +1,250 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+/* body + font */
+body {
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100vh;
+    --page-load-time: 0.5s;
+    --footer-load-time: 0.5s;
+
+}
+
+/*style of the section, header + main + footer */
+section {
+    overflow-x: hidden;
+    width: 375px;
+    height: 812px;
+    background: linear-gradient(0deg, #F5F3F1, #F5F3F1), #FFFFFF;
+    overflow-y: scroll;
+}
+
+.animation {
+    animation: page-load var(--page-load-time) ease 200ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-100%);
+}
+
+@keyframes footer-load {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes page-load {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* style of the header */
+header {
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 144%;
+    color: #1C0F13;
+    margin: 48px 0 25px 0;
+}
+
+header .button-back {
+    margin-left: 24px;
+    margin-right: 7px;
+}
+
+header .title {
+    text-align: center;
+    width: 299px;
+    height: 26px;
+}
+
+/* style of the main content */
+main .container {
+    display: flex;
+    flex-direction: nowrap row;
+    justify-content: center;
+    margin-bottom: 69px;
+}
+
+.container .right {
+    margin: 30px 0 114px 15px;
+}
+
+/* style card */
+main .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width: 160px;
+    height: 235px;
+    margin-bottom: 15px;
+}
+
+.card .illustration {
+    margin: 10px 0 10px 0;
+}
+
+.card .recipe-name {
+    margin: 0 10px 30px 10px;
+}
+
+/* recipe title style */
+.card h2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 137%;
+    letter-spacing: -0.55px;
+    color: #1C0F13;
+}
+
+.card p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+    color: rgba(28, 15, 19, 0.45);
+}
+
+
+.card .time-people {
+    display: flex;
+}
+
+.time-people .row {
+    display: flex;
+}
+
+.row img {
+    margin-right: 7px;
+}
+
+.row p {
+    margin-right: 12px;
+}
+
+/* card with a height of 277 */
+#height-277 {
+    height: 277px;
+}
+
+/* card with a height of 255 */
+#height-255 {
+    height: 255px;
+}
+
+/*card with a height of 215 */
+#height-215 {
+    height: 215px;
+}
+
+/* footer */
+
+footer {
+    width: 375px;
+    height: 104px;
+    background: radial-gradient(223.73% 100% at 49.87% 100%, #F5F3F1 76.81%, rgba(245, 243, 241, 0) 100%);
+    position: fixed;
+    bottom: 0;
+    animation: footer-load var(--footer-load-time) ease-in-out;
+    animation-fill-mode: forwards;
+    transform: translateX(-100%);
+}
+
+footer .nav-bar {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    width: 345px;
+    height: 63px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(28, 15, 19, 0.9);
+    margin: 0 auto;
+}
+
+footer .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(28, 15, 19, 0.9);
+}
+
+footer input {
+    background: #FFFFFF;
+    border: none;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(28, 15, 19, 0.9);
+}
+
+footer #active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C0F13;
+    width: 81px;
+    height: 51px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 6px 10px 6px 9px;
+}
+
+footer #active img {
+    margin-bottom: 5px;
+}
+
+footer .active-value {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background: #1C0F13;
+}
+
+footer #inspirations {
+    margin: 13.49px 9px 11px 14px;
+}
+
+footer #inspirations img {
+    margin-bottom: 5.25px;
+}
+
+footer #cook-now {
+    margin: 15.75px 16px 11px 0;
+}
+
+footer #cook-now img {
+    margin-bottom: 9px;
+}
+
+footer #settings {
+    margin: 13.25px 14px 11px 0;
+}
+
+footer #settings img {
+    margin-bottom: 5px;
+}

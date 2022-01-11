@@ -1,0 +1,126 @@
+body {
+    height: 100vh;
+}
+
+section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/bucket-pink.png');
+    background-repeat: no-repeat;
+    background-position: 85% 40%;
+}
+
+header img {
+    margin: 3rem 0 0 7rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8.5rem;
+}
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button-google {
+    cursor: pointer;
+}
+h1,
+p,
+a,
+button,
+.button-google {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.title {
+    max-width: 384px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 100%;
+    color: #000000;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #999FAE;
+}
+
+a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #000000;
+    margin-top: 0.563rem;
+}
+
+.button-blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 385px;
+    height: 72px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #fff;
+    border: 1px solid #999FAE;
+    background-color: #5956E9;
+}
+
+.forget-password {
+    margin: auto;
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.background img {
+    display: block;
+}
+
+/*responsive */
+
+@media only screen and (max-width: 1200px) {
+    section {
+        background-image: none;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .background img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .title {
+        text-align: center;
+    }
+
+    .button-blue {
+        width: 280px;
+        height: 53px;
+    }
+    .button-google {
+        width: 280px;
+    }
+
+    main {
+        align-items: center;
+    }
+}

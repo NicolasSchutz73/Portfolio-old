@@ -1,0 +1,29 @@
+.container {
+    height: 100vh;
+}
+
+
+p {
+    font-size: 24px;
+    color: #3D3D3A;
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+    margin: 0;
+}
+
+/*
+h1 {
+    color: #ab4d30;
+    font-size: 30px;
+    position: relative;
+    overflow: hidden;
+    height: 35px;
+    margin: 0;
+}
+*/
+
+.hidden-text {
+    position: absolute;
+    z-index: 200;
+}

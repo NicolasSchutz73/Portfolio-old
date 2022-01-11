@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="libs/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- section 1 -->
+    <section>
+
+        <!-- aside left -->
+        <aside>
+            <div class="nav-bar">
+                <ul>
+                    <li><button class="active"><img src="img/home-icon.svg" alt="Home button">Home</button></li>
+                    <li><button><img src="img/browse-icon.svg" alt="Browse button">Browse</button></li>
+                    <li><button><img id="liked" src="img/like-icon.svg" alt="Like button">Liked songs</button></li>
+                </ul>
+            </div>
+            <div class="library-field">
+                <p>YOUR LIBRARY</p>
+                <ul>
+                    <li><a href="#">Made for you</a></li>
+                    <li><a href="#">Recent played</a></li>
+                    <li><a href="#">Albums</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="#">Local files</a></li>
+                    <li><a href="#">Podcasts</a></li>
+                </ul>
+            </div>
+            <div class="playlist-field">
+                <p>PLAYLISTS</p>
+                <button><img src="img/plus-icon.png" alt="add button">New playlist</button>
+                <ul>
+                    <li>Chill</li>
+                    <li>Lofi</li>
+                    <li>Rap</li>
+                </ul>
+            </div>
+            <div class="bluetooth-field">
+                <img src="img/border-top.png">
+                <div class="listening">
+                    <img src="img/song-icon.svg" alt="song icon">
+                    <button>Listening on Bedroom</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- central container -->
+        <div class="container">
+
+            <!-- header -->
+            <header>
+                <div class="skip-button">
+                    <button>
+                        <img src="img/before-icon.svg" alt="">
+                    </button>
+                    <button>
+                        <img src="img/next-icon.svg" alt="">
+                    </button>
+                </div>
+                <div class="search-bar">
+                    <img src="img/search-icon.svg" alt="">
+                    <input type="search" placeholder="Search">
+                </div>
+                <div class="user">
+                    <img src="img/avatar-user.png" alt="avatar of the user">
+                    <span>Nicolas</span>
+                    <img src="img/arrow-icon.svg" alt="arrow slide">
+                </div>
+                <div class="title-bar">
+                    <img src="img/reduce-icon.svg" alt="reduce button">
+                    <img src="img/extend-icon.svg" alt="extend button">
+                    <img src="img/close-icon.svg" alt="close button">
+                </div>
+            </header>
+
+            <!-- main -->
+            <main>
+
+                <!-- recently played field -->
+                <div class="title">
+                    <h1>Recently played</h1>
+                </div>
+                <div class="recently-played">
+                    <div class="card">
+                        <img src="img/liked-song.png" alt="liked song card">
+                        <h2>Liked songs</h2>
+                    </div>
+                    <div class="card">
+                        <img src="img/album-1.png" alt="album cover">
+                        <h2>Careless: The Collection</h2>
+                        <p>NEFFEX</p>
+                    </div>
+                    <div class="card">
+                        <img src="img/album-2.png" alt="album cover">
+                        <h2>X&Y</h2>
+                        <p>Coldplay</p>
+                    </div>
+                </div>
+
+                <!-- friends activity field -->
+                <div class="friends-activity">
+                    <div class="header">
+                        <h1>Friends activity</h1>
+                        <div class="slide-bar">
+                            <button>FIND FRIENDS</button>
+                            <img src="img/slide-button.png" alt="button">
+                        </div>
+                    </div>
+                    <div class="friend-card">
+                        <div class="card">
+                            <div class="name">
+                                <img src="img/avatar-friends-activity.png" alt="friend avatar">
+                                <p>Darwell</p>
+                                <img src="img/song-icon-friends-activity.png" alt="song icon">
+                            </div>
+                            <div class="song-played">
+                                <img src="img/song-played.png" alt="song played">
+                                <div class="song-name">
+                                    <p>Lone Digger</p>
+                                    <span>Caravan Palace</span>
+                                    <span>&lt;|°_°|&gt;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="name">
+                                <img src="img/avatar-friends-activity.png" alt="friend avatar">
+                                <p>Darwell</p>
+                                <img src="img/song-icon-friends-activity.png" alt="song icon">
+                            </div>
+                            <div class="song-played">
+                                <img src="img/song-played.png" alt="song played">
+                                <div class="song-name">
+                                    <p>Lone Digger</p>
+                                    <span>Caravan Palace</span>
+                                    <span>&lt;|°_°|&gt;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="name">
+                                <img src="img/avatar-friends-activity.png" alt="friend avatar">
+                                <p>Darwell</p>
+                                <img src="img/song-icon-friends-activity.png" alt="song icon">
+                            </div>
+                            <div class="song-played">
+                                <img src="img/song-played.png" alt="song played">
+                                <div class="song-name">
+                                    <p>Lone Digger</p>
+                                    <span>Caravan Palace</span>
+                                    <span>&lt;|°_°|&gt;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="name">
+                                <img src="img/avatar-friends-activity.png" alt="friend avatar">
+                                <p>Darwell</p>
+                                <img src="img/song-icon-friends-activity.png" alt="song icon">
+                            </div>
+                            <div class="song-played">
+                                <img src="img/song-played.png" alt="song played">
+                                <div class="song-name">
+                                    <p>Lone Digger</p>
+                                    <span>Caravan Palace</span>
+                                    <span>&lt;|°_°|&gt;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- new releases field -->
+                <div class="new-releases">
+                    <h2>New release for you</h2>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <footer>
+        <div class="currently-listening">
+            <div class="song-cover">
+                <img src="img/song-cover.png" alt="album cover of the song">
+            </div>
+            <div class="liked-button">
+                <button>
+                    <img src="img/liked-button.png" alt="like button">
+                </button>
+            </div>
+            <div class="song-info">
+                <p>Square One</p>
+                <span>Coldplay</span>
+            </div>
+        </div>
+
+        <div class="song-progression">
+            <div class="button">
+                <button><img src="img/random-button.png" alt="random music"></button>
+                <button><img src="img/previous-button.png" alt="previous music"></button>
+                <button><img src="img/pause-button.png" alt="pause the music"></button>
+                <button><img src="img/next-button.png" alt="next music"></button>
+                <button><img src="img/repeat-button.png" alt="repeat the music"></button>
+            </div>
+            <div class="progression-bar">
+                <p>0:40</p>
+                <img src="img/progression-bar.png" alt="progression bar">
+                <p>4:47</p>
+            </div>
+        </div>
+        <div class="volume-bar">
+            <button><img src="img/waiting-line-button.png" alt="waiting line button"></button>
+            <button><img src="img/volume-bar.png" alt="volume bar"></button>
+            <button><img src="img/extand-button.png" alt="extand-button"></button>
+        </div>
+
+    </footer>
+</body>
+
+</html>

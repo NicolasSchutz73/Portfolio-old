@@ -1,0 +1,377 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100vh;
+    --page-load-time: 0.5s;
+    --footer-load-time: 0.5s;
+
+}
+
+section {
+    overflow-x: hidden;
+    width: 375px;
+    height: 812px;
+    background: linear-gradient(0deg, #F5F3F1, #F5F3F1), #FFFFFF;
+    overflow-y: scroll;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 52px 30px 64px 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 108%;
+    color: #1C0F13;
+}
+
+
+.animation {
+    animation: page-load var(--page-load-time) ease 200ms;
+    animation-fill-mode: forwards;
+    transform: translateY(500%);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 375px;
+    height: 104px;
+    background: radial-gradient(223.73% 100% at 49.87% 100%, #F5F3F1 76.81%, rgba(245, 243, 241, 0) 100%);
+    animation: footer-load var(--footer-load-time) ease-in-out;
+    animation-fill-mode: forwards;
+    transform: translateX(-100%);
+
+}
+
+@keyframes footer-load {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes page-load {
+    0% {
+        transform: translateY(500%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.browse-button:hover {
+
+}
+
+
+/* slide */
+.top-items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.recip-of-the-day,
+.cook-check {
+    flex: 0 0 auto;
+}
+
+.recip-of-the-day {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25px;
+    width: 243px;
+    height: 334px;
+    border-radius: 8px;
+    background: #FFFFFF;
+}
+
+.recip-of-the-day .title {
+    margin: 25px 25px 5px 25px;
+}
+
+.recip-of-the-day h2 {
+    margin-bottom: 25px;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 38px;
+    color: #1C0F13;
+}
+
+.recip-of-the-day span {
+    font-weight: 600;
+}
+
+.recip-of-the-day h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1C0F13;
+}
+
+.time-people {
+    display: flex;
+    margin: 0px 92px 15px 25px;
+    width: 193px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(28, 15, 19, 0.45);
+}
+
+.time-people .row {
+    display: flex;
+}
+
+.row img {
+    margin-right: 7px;
+}
+
+.row p {
+    margin-right: 12px;
+}
+
+.recip-of-the-day .recip-illustration img {
+    margin-left: 25px;
+}
+
+.cook-check {
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.cook-check a {
+    color: #1C0F13;
+}
+
+.cook .items {
+    margin: 25px;
+}
+
+.cook {
+    margin: 15px 0 15px 15px;
+    width: 243px;
+    height: 195px;
+    border-radius: 8px;
+    background: #FFFFFF;
+}
+
+.cook img {
+    transform: rotate(180deg);
+}
+
+.cook h2 {
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 200;
+    color: #1C0F13;
+}
+
+.cook span {
+    font-weight: 600;
+}
+
+.cook a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 137%;
+}
+
+.check {
+    margin-left: 15px;
+    width: 243px;
+    height: 126px;
+    border-radius: 8px;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    color: #1C0F13;
+    background: #FFFFFF;
+}
+
+.check span {
+    font-weight: 600;
+}
+
+.check .link {
+    margin: 25px;
+}
+
+/* recipe */
+
+.recommendation {
+    display: flex;
+    flex-direction: column;
+    margin: 64px 25px 32px 25px;
+}
+
+.recommendation .name {
+    margin-bottom: 15px;
+}
+
+.recommendation .name p {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    color: #1C0F13;
+}
+
+.recommendation .name span {
+    font-weight: 600;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+    width: 325px;
+    height: 433px;
+    border-radius: 8px;
+    background: #FFFFFF;
+
+}
+
+.recipe .photo {
+    margin: 25px 25px 15px 25px
+}
+
+.recipe .description {
+    color: #1C0F13;
+    margin: 0 25px 35px 25px;
+    max-width: 275px;
+}
+
+.recipe .description h1 {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+}
+
+.recipe .description p {
+    font-size: 16px;
+    line-height: 137%;
+}
+
+.browse-button {
+    margin: 0 auto;
+}
+
+.browse-button input {
+    margin-bottom: 144px;
+    box-sizing: border-box;
+    width: 315px;
+    height: 51px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 144%;
+    color: #1C0F13;
+    border: 1.4px solid #1C0F13;
+    border-radius: 8px;
+    background-color: #F5F3F1;
+}
+
+
+
+
+footer .nav-bar {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 345px;
+    height: 63px;
+    border-radius: 12px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+    color: rgba(28, 15, 19, 0.9);
+    background: #FFFFFF;
+
+}
+
+footer .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(28, 15, 19, 0.9);
+}
+
+footer input {
+    border: none;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(28, 15, 19, 0.9);
+    background: #FFFFFF;
+}
+
+footer #active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6px 9px 6px 7px;
+    width: 81px;
+    height: 51px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background-color: #1C0F13;
+}
+
+footer #active img {
+    margin-bottom: 5.25px;
+}
+
+footer .active-value {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background: #1C0F13;
+}
+
+footer #my-recipes {
+    margin: 14.06px 17px 11px 0;
+}
+
+footer #my-recipes img {
+    margin-bottom: 7.49px;
+}
+
+footer #cook-now {
+    margin: 15.75px 16px 11px 0;
+}
+
+footer #cook-now img {
+    margin-bottom: 9px;
+}
+
+footer #settings {
+    margin: 13.25px 14px 11px 0;
+}
+
+footer #settings img {
+    margin-bottom: 5px;
+}

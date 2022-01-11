@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../libs/reset.css">
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- section -->
+    <section>
+        <div class="animation">
+            <!-- header -->
+            <header>
+                <h1>Cooksy</h1>
+                <img src="../img/home/search-icon.svg" alt="search button">
+            </header>
+            <!-- main content -->
+            <main>
+                <!-- top card -->
+                <div class="top-items">
+                    <!-- left card -->
+                    <div class="recip-of-the-day">
+                        <div class="title">
+                            <h2><span>Recipe</span><br> of the day</h2>
+                            <h3>Roasted Pumpkin Soup</h3>
+                        </div>
+                        <div class="time-people">
+                            <div class="row">
+                                <img src="../img/home/clock-icon.svg" alt="time preparation">
+                                <p>50 min</p>
+                            </div>
+                            <div class="row">
+                                <img src="../img/home/plate-icon.svg" alt="number of person">
+                                <p>4 ppl</p>
+                            </div>
+                        </div>
+                        <div class="recip-illustration">
+                            <img src="../img/home/roasted-pumpkin-soup.png" alt="representation of the recip">
+                        </div>
+                    </div>
+                    <!-- right card -->
+                    <div class="cook-check">
+                        <div class="cook">
+                            <div class="items">
+                                <h2><span>Cook</span><br> like pro</h2>
+                                <a href="#">Thermomix advanced<br> tips and tricks</a>
+                                <img src="../img/latest/arrow-left-icon.svg" alt="button">
+                            </div>
+                        </div>
+                        <div class="check">
+                            <div class="link">
+                                <a href="#"><span>Check</span><br> new updates</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bottom card -->
+                <div class="recommendation">
+                    <!-- title -->
+                    <div class="name">
+                        <p><span>René Redzepi</span> recommends you</p>
+                    </div>
+                    <!-- recipe card -->
+                    <div class="recipe">
+                        <div class="photo">
+                            <img src="../img/home/vegan-thai-soup.jpg" alt="photo of the recipe">
+                        </div>
+                        <div class="description">
+                            <h1>Vegan Thai Curry Soup</h1>
+                            <p>Spice lovers will slurp up this soup in seconds.
+                                Featuring chili powder, smoked paprika, and
+                                cayenne pepper, every bowl brings the heat.
+                            </p>
+                        </div>
+                        <div class="time-people">
+                            <div class="row">
+                                <img src="../img/home/clock-icon.svg" alt="time preparation">
+                                <p>50 min</p>
+                            </div>
+                            <div class="row">
+                                <img src="../img/home/plate-icon.svg" alt="number of person">
+                                <p>4 ppl</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- button //need animation need to change in simple button\\-->
+                    <div class="browse-button">
+                        <input type="button" value="Browse more recipes" onclick="document.location.href='#';">
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- footer -->
+        <footer>
+            <!-- nav bar -->
+            <div class="nav-bar">
+                <!-- first link active -->
+                <div class="icon" id="active">
+                    <img src="../img/nav-bar/inspirations-icon-white.svg" alt="">
+                    <input class="active-value" type="button" value="Inspirations"
+                        onclick="document.location.href='../pages/home.html';">
+                </div>
+                <!-- second link -->
+                <div class="icon" id="my-recipes">
+                    <img src="../img/nav-bar/my-recipes-icon.svg" alt="">
+                    <input type="button" value="My recipes" onclick="document.location.href='../pages/latest.html';">
+                </div>
+                <!-- third link -->
+                <div class="icon" id="cook-now">
+                    <img src="../img/nav-bar/cook-now-icon-grey.svg" alt="">
+                    <input type="button" value="Cook now!" onclick="document.location.href='../pages/cookin.html';">
+                </div>
+                <!-- fourth link -->
+                <div class="icon" id="settings">
+                    <img src="../img/nav-bar/settings-icon.svg" alt="">
+                    <input type="button" value="Settings" onclick="document.location.href='#';">
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,381 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: 'DM Sans', sans-serif, 'Lora', serif;
+  scroll-behavior: smooth;
+  color: #3D3D3A;
+  letter-spacing: -0.03em;
+}
+
+a {
+  color: #3D3D3A;
+  letter-spacing: -0.03em;
+}
+
+@font-face {
+  font-family: 'Valky';
+  src: url(fonts/valky.OTF);
+}
+
+/* loader style */
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  transition: all .5s;
+  background-color: #F2F2F2;
+}
+
+#loader img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* page content style */
+.container-grid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* header style */
+header {
+  grid-column: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 7rem 10rem;
+}
+
+header a,
+.items a {
+  font-size: 21px;
+  line-height: 120%;
+}
+
+/* main style */
+main {
+  padding: 0 10rem;
+}
+
+main .container-project {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 7.1rem;
+  padding-bottom: 6.6rem;
+}
+
+.items {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.items h2 {
+  font-weight: 500;
+  font-size: 45px;
+  margin-bottom: 2rem;
+  font-family: 'Valky';
+}
+
+.items p,
+.about__items p,
+.link-cv {
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  line-height: 120%;
+}
+
+.items span {
+  margin-bottom: 7rem;
+  font-size: 14px;
+}
+
+.project__link-animation {
+  width: 188px;
+}
+
+/* footer style */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 16rem 3rem 16rem;
+  font-size: 14px;
+}
+
+.fadeLeft-2,
+.fadeLeft-1 {
+  width: 60%;
+  padding: 1rem 0;
+}
+
+.about__items h1 {
+  font-weight: 500;
+  font-size: 58px;
+  margin-bottom: 2rem;
+  font-family: 'Lora', serif;
+}
+
+.link-cv {
+  display: block;
+  width: 65px;
+}
+
+.informations__items p {
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+
+.items__row {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.items__row-name {
+  width: 120px;
+}
+
+.items__row p {
+  padding-left: 1rem;
+}
+
+.container-about .fadeUp-cv {
+  width: 85px;
+}
+
+/* animation link */
+.animation-hover {
+  color: #a8a8a8;
+}
+
+.animation-hover:hover {
+  color: #3D3D3A;
+  transition: color .3s ease;
+}
+
+.animation-link-1px-reverse::after {/* reverse */
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #3D3D3A;
+  transition: width .3s;
+}
+
+.animation-link-1px-reverse:hover::after {
+  width: 0;
+  transition: width .3s;
+}
+
+.animation-link-1px::after {/* reverse */
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #3D3D3A;
+  transition: width .3s;
+}
+
+.animation-link-1px:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+/* contact page */
+/* animation text contact */
+.bold-text {
+  position: relative;
+  overflow: hidden;
+  font-size: 58px;
+  height: 67px;
+  font-weight: 500;
+  margin: 0;
+  font-family: 'Valky';
+}
+
+.light-text {
+  position: relative;
+  overflow: hidden;
+  font-size: 22px;
+  height: 25px;
+  margin: 1rem 0;
+  font-family: 'Sen', sans-serif;
+}
+
+.container-fadeUp-text a {
+  color: #3D3D3A;
+}
+
+.hidden-text {
+  position: absolute;
+  z-index: 200;
+}
+
+.contact__links {
+  padding: 1rem 0;
+}
+
+.cooksy-img {
+  padding: 0 12rem;
+}
+
+/* Responsive */
+/* medium screen */
+@media screen and (max-width: 1385px) {
+  header {
+    padding: 3.25rem 4rem 7rem 4rem;
+  }
+
+  main {
+    padding: 0 4rem;
+  }
+
+  footer {
+    padding: 3rem 4rem 2.5rem 4rem;
+  }
+
+  /* index */
+  .container-project {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .illustration-project {
+    text-align: center;
+  }
+
+  .illustration-project img {
+    width: 85%;
+    height: auto;
+  }
+
+  .items {
+    width: 85%;
+    padding-top: 2rem;
+  }
+
+  .items span {
+    margin-bottom: 4rem;
+  }
+}
+
+
+/* small screen */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 3rem 1rem 4rem 1rem;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
+  .items h2 {
+    font-size: 30px;
+  }
+
+  .items p,
+  .items span {
+    font-size: 16px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .container-project:last-child {
+    margin-bottom: 4rem;
+  }
+
+  .illustration-project img {
+    width: 100%;
+  }
+
+  /* about */
+  .container-fadeUp-text .bold-text {
+    font-size: 33px;
+    height: 48px;
+  }
+
+  .container-fadeUp-text .light-text {
+    font-size: 18px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .container-fadeUp-text .bold-text {
+    font-size: 30px;
+    height: 38px;
+  }
+
+  .container-fadeUp-text .light-text {
+    font-size: 16px;
+    height: 18px;
+  }
+}

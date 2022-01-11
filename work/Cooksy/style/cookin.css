@@ -1,0 +1,169 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100vh;
+}
+
+section {
+    overflow-x: hidden;
+    width: 375px;
+    height: 812px;
+    background: linear-gradient(0deg, #F5F3F1, #F5F3F1), #FFFFFF;
+    overflow-y: scroll;
+}
+
+header {
+    text-align: center;
+    margin: 48px auto 52px;
+    width: 299px;
+    height: 26px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 144%;
+    color: #1C0F13;
+}
+
+main .recipe {
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 325px;
+    height: 244px;
+    border-radius: 8px;
+    background: #FFFFFF;
+}
+
+.recipe .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 183%;
+    color: #1C0F13;
+}
+
+.header .bluetooth {
+    display: flex;
+    align-items: center;
+}
+
+.recipe .instructions {
+    margin: 0 27px 25px;
+}
+
+.instructions h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+    color: #1C0F13;
+}
+
+.instructions p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 137%;
+    color: #1C0F13;
+}
+
+.instructions span {
+    font-weight: 400;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 375px;
+    height: 104px;
+    background: radial-gradient(223.73% 100% at 49.87% 100%, #F5F3F1 76.81%, rgba(245, 243, 241, 0) 100%);
+}
+
+footer .nav-bar {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 345px;
+    height: 63px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+    color: rgba(28, 15, 19, 0.9);
+    background: #FFFFFF;
+}
+
+footer .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(28, 15, 19, 0.9);
+}
+
+footer input {
+    border: none;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(28, 15, 19, 0.9);
+    background: #FFFFFF;
+}
+
+footer #active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6px 9px 6px 10px;
+    width: 81px;
+    height: 51px;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #1C0F13;
+
+}
+
+footer #active img {
+    margin-bottom: 5px;
+}
+
+footer .active-value {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background: #1C0F13;
+}
+
+footer #inspirations {
+    margin: 13.49px 16px 11px 14px;
+}
+
+footer #inspirations img {
+    margin-bottom: 5.25px;
+}
+
+footer #my-recipes {
+    margin: 14.06px 10px 11px 0;
+}
+
+footer #my-recipes img {
+    margin-bottom: 7.49px;
+}
+
+footer #settings {
+    margin: 13.25px 14px 11px 0;
+}
+
+footer #settings img {
+    margin-bottom: 5px;
+}

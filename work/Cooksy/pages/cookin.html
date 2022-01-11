@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookin</title>
+    <link rel="stylesheet" href="../libs/reset.css">
+    <link rel="stylesheet" href="../style/cookin.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- section -->
+    <section>
+        <!-- header -->
+        <header>
+            <div class="title">
+                <h1>Cooking time!</h1>
+            </div>
+        </header>
+        <!-- main -->
+        <main>
+            <!-- recipe card -->
+            <div class="recipe">
+                <div class="header">
+                    <p>Step 1/10</p>
+                    <div class="bluetooth">
+                        <img src="../img/cookin/verified-check-icon.svg" alt="">
+                        <p>Connected to TM6</p>
+                    </div>
+                </div>
+                <div class="instructions">
+                    <h2>Start with basics</h2>
+                    <p>Chop pumpkin and sweet potato into <span>small chunks</span>, put them to the bowl.<br><br>
+                        Then add water and paprika. <span>Select program no. 3</span> and cook for <span>20 mins.</span>
+                    </p>
+                </div>
+            </div>
+            <!-- program number //need animation\\-->
+            <div class="program">
+                <img src="../img/cookin/program-dynks.png" alt="">
+            </div>
+        </main>
+        <!-- footer -->
+        <footer>
+            <!-- nav bar -->
+            <div class="nav-bar">
+                <!-- first link -->
+                <div class="icon" id="inspirations">
+                    <img src="../img/cookin/inspiration-icon-grey.svg" alt="">
+                    <input type="button" value="Inspirations" onclick="document.location.href='../pages/home.html';">
+                </div>
+                <!-- second link -->
+                <div class="icon" id="my-recipes">
+                    <img src="../img/nav-bar/my-recipes-icon.svg" alt="">
+                    <input type="button" value="My recipes" onclick="document.location.href='../pages/latest.html';">
+                </div>
+                <!-- third link active -->
+                <div class="icon" id="active">
+                    <img src="../img/cookin/cook-now-icon-white.svg" alt="">
+                    <input  class="active-value" type="button" value="Cook now!" onclick="document.location.href='../pages/cookin.html';">
+                </div>
+                <!-- fourth link -->
+                <div class="icon" id="settings">
+                    <img src="../img/nav-bar/settings-icon.svg" alt="">
+                    <input  type="button" value="Settings" onclick="document.location.href='#';">
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html> 
